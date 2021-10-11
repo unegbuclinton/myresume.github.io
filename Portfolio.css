@@ -208,7 +208,38 @@ html{
 
 }
 
-.project-img::after{
+.img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.75s;
+}
+
+.img-overlay:hover{
+    opacity: 1;
+}
+
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    
+}
+.icons p{
+    color: white;
+}
+
+.icons a{
+    margin: 0 2rem;
+}
+/* .project-img::after{
     content: "";
     position: absolute;
     top: 0;
@@ -218,14 +249,11 @@ html{
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     opacity: .7;
     z-index: 1;
-}
+} */
 .project-item:hover .project-img img{
     transform: scale(1.1);
 }
 
-#projects .repo{
-    display: flex;
-}
 #projects .repo a{
     padding: 20px;
     margin: 10px ;
