@@ -203,12 +203,11 @@ html{
     
 }
 .project-img img{
-    transition: .3s ease transform;
-   
+    transition: .3s ease transform;   
 
 }
 
-.img-overlay{
+/* .img-overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -217,7 +216,7 @@ html{
     background: rgba(0, 0, 0, 0.6);
     opacity: 0;
     transition: opacity 0.75s;
-}
+} */
 
 .img-overlay:hover{
     opacity: 1;
@@ -239,7 +238,7 @@ html{
 .icons a{
     margin: 0 2rem;
 }
-/* .project-img::after{
+.project-img::after{
     content: "";
     position: absolute;
     top: 0;
@@ -247,13 +246,16 @@ html{
     width: 100%;
     height: 100%;
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    opacity: .7;
+    opacity: .4;
     z-index: 1;
-} */
+} 
 .project-item:hover .project-img img{
     transform: scale(1.1);
 }
 
+#projects .repo{
+    display: flex;
+}
 #projects .repo a{
     padding: 20px;
     margin: 10px ;
